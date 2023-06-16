@@ -7,6 +7,7 @@ import Footer from "../Footer/Footer";
 import Main from "../Main/Main";
 import Register from "../Register/Register";
 import Login from "../Login/Login";
+import Profile from "../Profile/Profile";
 
 function App() {
   return (
@@ -21,19 +22,20 @@ function App() {
           </Route>
           {/* Регистрация */}
           <Route path="/signup">
-            <Header />
             <Register />
             <Footer />
           </Route>
           {/* Авторизация */}
           <Route path="/signin">
-            <Header />
             <Login />
             <Footer />
           </Route>
-          
+          {/* Страница профиля */}
+          <Route path="/profile">
+            <Profile />
+          </Route>
           {/* Главная страница */}
-          {/* Главная страница */}
+
           {/* Главная страница */}
         </Switch>
       </section>
