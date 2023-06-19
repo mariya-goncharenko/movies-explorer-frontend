@@ -11,7 +11,7 @@ function Header({ loggedIn }) {
     <>
       {!loggedIn ? (
         <header className="header" id="header">
-          <Link to="/" className="form__logo">
+          <Link to="/" className="header__logo">
             <img src={logo} alt="Логотип сайта" />
           </Link>
           <div className="header__button-container">
@@ -25,7 +25,7 @@ function Header({ loggedIn }) {
         </header>
       ) : (
         <header className="header" id="header">
-          <Link to="/" className="form__logo">
+          <Link to="/" className="header__logo">
             <img src={logo} alt="Логотип" />
           </Link>
           <div className="header__button-container_films">
