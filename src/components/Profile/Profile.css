@@ -52,6 +52,7 @@
   border: none;
   outline: none;
   background-color: transparent;
+  color: #fff;
 }
 
 .profile__input-error {
@@ -75,20 +76,6 @@
 .profile__border {
   border-bottom: 1px solid #424242;
   margin-bottom: 17px;
-}
-
-.profile__button-save {
-  margin-top: 213px;
-  min-height: 16px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
-  text-align: center;
-  border: none;
-  color: #000;
-  background-color: white;
-  cursor: pointer;
 }
 
 .profile__save {
