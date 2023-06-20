@@ -7,23 +7,18 @@ import MoviesCard from "../MoviesCard/MoviesCard";
 function MoviesCardList() {
   return (
     <section className="cards">
-      {/*<Preloader />
+      {/*<Preloader />*/}
 
-      <SearchError errorText={"Ничего не найдено"} />
+      {/*<SearchError errorText={"Ничего не найдено"} />*/}
 
-      <SearchError
+      {/*<SearchError
         errorText={
           "Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз"
         }
-      />
-      */}
+      />*/}
+      <MoviesCard />
 
-      <ul className="cards__list">
-        <MoviesCard />
-      </ul>
-      <div className="cards__button-container"></div>
-
-      <ul className="cards__list"></ul>
+    
       <div className="cards__button-container">
         <button className="cards__button">Ещё</button>
       </div>
