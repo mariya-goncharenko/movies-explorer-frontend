@@ -14,7 +14,7 @@
   align-items: center;
 }
 
-.header__button-container_films {
+.header__button-container-films {
   display: flex;
   gap: 16px;
   margin-left: 44px;

@@ -18,7 +18,7 @@
   border: none;
   outline: none;
   background: #343434;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   border-radius: 16px;
   position: relative;
   cursor: pointer;
@@ -34,12 +34,11 @@
   top: 2px;
   left: 2px;
   background: #FFF;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   content: "";
   border-radius: 100%;
   transition: 0.4s ease;
 }
-
 
 .filter__checkbox:checked::after {
   margin: 0;
@@ -50,9 +49,9 @@
   top: 2px;
   right: 2px;
   background: #2BE080;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   content: "";
-  outline:solid 1px #fff;
+  outline: solid 1px #fff;
   transition: 0.4s ease;
   transform: translate(16px);
 }

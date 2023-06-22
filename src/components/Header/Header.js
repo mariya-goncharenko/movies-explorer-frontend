@@ -62,7 +62,7 @@ function Header() {
           </Link>
 
           <div className="header__button-container">
-            <div className="header__button-container_films">
+            <div className="header__button-container-films">
             <NavLink
                 to="/movies"
                 className="header__button"

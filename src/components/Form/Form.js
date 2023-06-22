@@ -15,12 +15,12 @@ function Form({
   isLoading,
 }) {
   return (
-    <div className="form__container">
+    <div className="form">
       <Link to="/" className="form__logo">
         <img src={logo} alt="Логотип" />
       </Link>
       <h3 className="form__title">{title}</h3>
-      <form className="form" id="form" onSubmit={onSubmit} noValidate>
+      <form className="forma" id="form" onSubmit={onSubmit} noValidate>
         {children}
         <button
           type="submit"
