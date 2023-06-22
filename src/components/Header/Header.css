@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   position: relative;
+  justify-content: space-between;
 }
 
 .header__button-container {
@@ -21,7 +22,6 @@
 
 .header__button {
   min-height: 32px;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -48,13 +48,7 @@
   border-radius: 3px;
 }
 
-.header__account-button {
-  width: 100px;
-  height: 32px;
-  background: #ffffff;
-  box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.08);
-  border-radius: 40px;
-}
+
 
 .header__account-button:hover {
   cursor: pointer;
@@ -62,7 +56,7 @@
 }
 
 .header__menu-button {
-  background-color: #ffffff;
+  background-color: transparent;
   border: none;
   width: 44px;
   height: 44px;
@@ -107,7 +101,7 @@
     line-height: 16px;
   }
 
-  .header__button-black {
+  .header__button-green {
     min-width: 54px;
   }
 }

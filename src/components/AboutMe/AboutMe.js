@@ -1,6 +1,6 @@
 import React from "react";
-import photo from "../../images/mari.jpg";
 import "./AboutMe.css";
+import my_photo from "../../images/mari.jpg";
 
 function AboutMe() {
   return (
@@ -9,8 +9,8 @@ function AboutMe() {
       <div className="about-me__container">
         <div className="about-me__content">
           <h3 className="about-me__subtitle">Мария Гончаренко</h3>
-          <p className="about-me__info">Фронтенд-разработчик, 25 лет</p>
-          <p className="about-me__description">
+          <p className="about-me__description">Фронтенд-разработчик, 25 лет</p>
+          <p className="about-me__text">
             Живу и работаю в Нижнем Новгороде, закончила Радиофизический
             факультет ННГУ им.Лобачевского. Увлекаюсь туризмом, люблю
             путешествовать, живу с 5 замечательными котиками и 3 пёселями.
@@ -20,15 +20,15 @@ function AboutMe() {
             знания.
           </p>
           <a
-            href="https://github.com/mariya-goncharenko"
             className="about-me__link"
+            href="https://github.com/mariya-goncharenko"
             target="_blank"
             rel="noreferrer"
           >
             Github
           </a>
         </div>
-        <img src={photo} alt="фото" className="about-me__photo" />
+        <img className="about-me__photo" src={my_photo} alt="Мария Гончаренко"  />
       </div>
     </section>
   );

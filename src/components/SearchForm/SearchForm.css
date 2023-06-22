@@ -7,14 +7,14 @@
 
 .search__border-bottom {
   margin-top: 64px;
-  border-bottom: 1.5px solid rgba(170, 170, 170, 0.2); /* Прозрачность бордера */
+  border-bottom: 1px solid rgba(170, 170, 170, 0.2);
 }
 
 .search__form {
   display: flex;
   padding: 10px 10px;
   margin-bottom: 29px;
-  border: 1.5px solid rgba(170, 170, 170, 0.2); /* Прозрачность бордера */
+  border: 1px solid rgba(170, 170, 170, 0.2);
   border-radius: 8px;
   align-items: center;
   justify-content: space-between;

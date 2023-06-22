@@ -11,7 +11,7 @@
   display: grid;
   grid-template-columns: repeat(3, 364px);
   flex-wrap: nowrap;
-  gap: 32px 20px;
+  gap: 37px 24px;
   justify-content: center;
 }
 
@@ -31,7 +31,6 @@
   color: #fff;
   border: none;
   border-radius: 5px;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
@@ -40,12 +39,9 @@
   justify-content: center;
 }
 
-
-
 .cards__button:hover {
-  border: 1px solid #2be080;
+  border: 1px solid #3DDC84;
   cursor: pointer;
-  opacity: 0.6;
 }
 
 @media screen and (max-width: 1180px) {
@@ -58,7 +54,7 @@
   .cards__list {
     padding: 70px 30px 30px;
     grid-template-columns: repeat(2, 339px);
-    gap: 36px 30px;
+    gap: 30px
   }
 }
 
@@ -72,10 +68,10 @@
   .cards__list {
     padding: 40px 10px 30px;
     grid-template-columns: repeat(1, 300px);
-    gap: 20px;
+    gap: 14px;
   }
 
   .cards__button {
-    width: 240px;
+    width: 300px;
   }
 }

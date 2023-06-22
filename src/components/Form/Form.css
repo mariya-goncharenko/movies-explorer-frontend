@@ -13,13 +13,12 @@
 
 .form__logo:hover {
   cursor: pointer;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .form__title {
   margin: 0;
   padding: 40px 0;
-  font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
@@ -39,7 +38,6 @@
   background-color: #4285f4;
   color: #fff;
   border-radius: 3px;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -53,7 +51,7 @@
 
 .form__button-save_inactive {
   pointer-events: none;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #000000;
   box-sizing: border-box;
   color: #000000;
@@ -62,15 +60,13 @@
 
 .form__button-save_loading {
   pointer-events: none;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .form__text {
   margin: 0;
-  padding: 0;
-  padding-top: 16px;
+  padding: 16px 0 0;
   text-align: center;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -80,7 +76,6 @@
 .form__link {
   text-decoration: none;
   color: #4285f4;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -91,22 +86,18 @@
 }
 
 .form__field {
-  margin: 0;
+  margin: 0 0 24px;
   padding: 0;
-  margin-bottom: 24px;
-  font-style: normal;
+  position: relative;
   font-weight: 400;
   font-size: 10px;
   line-height: 12px;
-  color: #a0a0a0;
-  position: relative;
 }
 
 .form__input {
   margin: 0;
   padding: 5px 0 10px 0;
   width: 100%;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -120,23 +111,25 @@
 .form__input:focus {
   border-bottom: 1px solid #4285f4;
 }
+.form__field:hover {
+  opacity: 0.8;
+}
 
 .form__input_type_error {
-  border-bottom-color: red;
+  border-bottom-color: #EE3465;
 }
 
 .form__input_type_error:focus {
-  border-bottom-color: red;
+  border-bottom-color: #EE3465;
 }
 
 .form__input-error {
   margin: 0;
   padding: 0;
-  font-style: normal;
   font-weight: 400;
   font-size: 10px;
   line-height: 12px;
-  color: #ff4062;
+  color: #EE3465;
   position: absolute;
   top: 50px;
   left: 0;
@@ -166,14 +159,12 @@
   }
 
   .form {
-    /* min-height: 310px; */
     min-height: 468px;
   }
 
   .form__button-save {
     font-size: 12px;
     line-height: 15px;
-    /* margin-top: 80px; */
   }
 
   .form__text {

@@ -10,19 +10,19 @@ function Footer() {
       <div className="footer__container">
         <p className="footer__author">
           {" "}
-          © {new Date().getFullYear()}. Мария Гончаренко
+          © 2023. Мария Гончаренко
         </p>
         <a
-          href="https://practicum.yandex.ru"
           className="footer__link"
+          href="https://practicum.yandex.ru"
           target="_blank"
           rel="noreferrer"
         >
           Яндекс.Практикум
         </a>
         <a
-          href="https://github.com/mariya-goncharenko"
           className="footer__link"
+          href="https://github.com/mariya-goncharenko"
           target="_blank"
           rel="noreferrer"
         >

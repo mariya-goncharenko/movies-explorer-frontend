@@ -1,15 +1,46 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import "./Header.css";
 
 import logo from "../../images/logo.svg";
 import account from "../../images/acc-button.svg";
 import menu from "../../images/menu-button.svg";
 
-function Header({ loggedIn }) {
+import Navigation from "../Navigation/Navigation"
+
+function Header() {
+
+  const location = useLocation()
+
+  // Функция для проверки, нужно ли отображать шапку для фильмов:
+  const shouldShowSecondHeader = () => {
+    const { pathname } = location
+    return (
+        pathname === "/movies" ||
+        pathname === "/saved-movies" ||
+        pathname === "/profile"
+    )
+  }
+
+  //Функция для проверки, нужно ли отображатьосновную шапку:
+  const shouldShowFirstHeader = () => {
+    const { pathname } = location
+    return pathname === "/"
+  }
+
+  const [isClicked, setIsClicked] = React.useState(false)
+
+  function handleOpen() {
+    setIsClicked(true)
+  }
+
+  function handleClose() {
+    setIsClicked(false)
+  }
+
   return (
     <>
-      {!loggedIn ? (
+      {shouldShowFirstHeader() && (
         <header className="header" id="header">
           <Link to="/" className="header__logo">
             <img src={logo} alt="Логотип сайта" />
@@ -23,35 +54,42 @@ function Header({ loggedIn }) {
             </Link>
           </div>
         </header>
-      ) : (
+      )}
+      {shouldShowSecondHeader() && (
         <header className="header" id="header">
           <Link to="/" className="header__logo">
             <img src={logo} alt="Логотип" />
           </Link>
-          <div className="header__button-container_films">
+
+          <div className="header__button-container">
+            <div className="header__button-container_films">
             <NavLink
-              to="/movies"
-              className="header__button"
-              activeClassName="header__button_active"
+                to="/movies"
+                className="header__button"
+                activeClassName="header__button_active"
             >
               Фильмы
             </NavLink>
             <NavLink
-              to="/saved-movies"
-              className="header__button"
-              activeClassName="header__button_active"
+                to="/saved-movies"
+                className="header__button"
+                activeClassName="header__button_active"
             >
               Сохранённые фильмы
             </NavLink>
           </div>
-          <div className="header__button-container">
             <Link to="/profile" className="header__account-button">
-              <img src={account} alt="Аккаунт пользователя" />
+              <img
+                  className="header__account-image"
+                  src={account}
+                  alt="изображение кнопки аккаунта"
+              />
             </Link>
-            <button className="header__menu-button">
-              <img src={menu} alt="Меню" />
+            <button className="header__menu-button" onClick={handleOpen}>
+              <img src={menu} alt="меню" />
             </button>
           </div>
+          {isClicked ? <Navigation handleClose={handleClose} /> : ""}
         </header>
       )}
     </>
@@ -59,3 +97,5 @@ function Header({ loggedIn }) {
 }
 
 export default Header;
+
+

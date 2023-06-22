@@ -1,8 +1,6 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom"
 
-import "./App.css";
-
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
@@ -14,18 +12,20 @@ import Login from "../Login/Login";
 import Profile from "../Profile/Profile";
 import NotFound from "../NotFound/NotFound";
 
+import "./App.css";
+
 function App() {
 
   const location = useLocation()
 
-  // Временная функция для проверки, нужно ли отображать Header на текущей странице
-  const shouldShowHeader = () => {
+  // Проверяем, нужно ли отображать шапку на странице:
+  const showHeader = () => {
     const { pathname } = location
     return pathname === "/"
   }
 
-  // Временная функция для проверки, нужно ли отображать Footer на текущей странице
-  const shouldShowFooter = () => {
+  // Проверяем, нужно ли отображать подвал на странице:
+  const showFooter = () => {
     const { pathname } = location
     return pathname === "/"
   }
@@ -33,7 +33,7 @@ function App() {
   return (
     <div className="page">
       <div className="page__content">
-        {shouldShowHeader() && <Header />}
+        {showHeader() && <Header />}
         <Routes>
           <Route path="/signup" element={<Register />} />
           <Route path="/signin" element={<Login />} />
@@ -43,7 +43,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-        {shouldShowFooter() && <Footer />}
+        {showFooter() && <Footer />}
       </div>
     </div>
   );

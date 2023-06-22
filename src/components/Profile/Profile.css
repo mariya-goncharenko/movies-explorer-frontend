@@ -13,7 +13,7 @@
   padding: 0;
   margin-bottom: 123px;
   text-align: center;
-  font-style: normal;
+
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
@@ -31,7 +31,7 @@
   align-items: flex-start;
   margin: 0;
   padding: 0;
-  font-style: normal;
+
   font-weight: 500;
   font-size: 11px;
   line-height: 13px;
@@ -45,7 +45,7 @@
   padding: 0;
   width: 350px;
   text-align: right;
-  font-style: normal;
+
   font-weight: 400;
   font-size: 11px;
   line-height: 13px;
@@ -58,7 +58,7 @@
 .profile__input-error {
   margin: 0;
   padding: 0;
-  font-style: normal;
+
   font-weight: 400;
   font-size: 10px;
   line-height: 12px;
@@ -81,7 +81,7 @@
 .profile__save {
   margin-top: 220px;
   min-height: 16px;
-  font-style: normal;
+
   font-weight: 500;
   font-size: 13px;
   line-height: 16px;
@@ -95,7 +95,7 @@
 .profile__logout {
   margin-top: 16px;
   min-height: 16px;
-  font-style: normal;
+
   font-weight: 500;
   font-size: 13px;
   line-height: 16px;

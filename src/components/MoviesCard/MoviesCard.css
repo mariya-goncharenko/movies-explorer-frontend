@@ -7,7 +7,6 @@
 }
 
 .card__image {
-  background-image: url(../../images/card.jpg);
   object-fit: cover;
   background-size: cover;
   object-fit: cover;
@@ -29,7 +28,7 @@
   font-weight: 400;
   font-size: 11px;
   line-height: 13px;
-  color: #8b8b8b;
+  color: #8B8B8B;
   align-items: center;
 }
 
@@ -38,7 +37,6 @@
   font-weight: 500;
   font-size: 13px;
   line-height: 16px;
-  color: #FFF;
 }
 
 .card__delete-button {

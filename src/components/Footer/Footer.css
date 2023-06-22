@@ -1,32 +1,29 @@
 .footer {
+  padding: 79px 70px 20px 70px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding: 79px 70px 20px 70px;
 }
 
 .footer__title {
   margin: 0;
-  padding: 0;
-  padding-bottom: 20px;
-  font-style: normal;
+  padding: 0 0 20px;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
   text-align: center;
-  color: #8b8b8b;
+  color: #8B8B8B;
   border-bottom: 1px solid #424242;
 }
 
 .footer__container {
-  display: flex;
   margin-top: 20px;
+  display: flex;
 }
 
 .footer__author {
   margin: 0;
   padding: 0;
-  font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
@@ -34,14 +31,12 @@
 }
 
 .footer__link {
-  margin: 0;
+  margin: 0 0 0 20px;
   padding: 0;
-  margin-left: 20px;
-  font-style: normal;
+  color: #fff;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
-  color: #fff;
   text-decoration: none;
 }
 
@@ -57,7 +52,7 @@
 
 @media screen and (max-width: 576px) {
   .footer {
-    padding: 79px 10px 10px 10px;
+    padding: 79px 10px 21px 10px;
   }
 
   .footer__title {
@@ -75,13 +70,12 @@
   .footer__author {
     font-size: 12px;
     line-height: 15px;
-    color: #fff;
     order: 10;
     margin-top: 18px;
   }
 
   .footer__link {
-    margin-left: 0px;
+    margin-left: 0;
     font-size: 12px;
     line-height: 15px;
     margin-bottom: 12px;
