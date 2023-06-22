@@ -52,13 +52,13 @@
 
 @media screen and (max-width: 1023px) {
   .cards__list {
-    padding: 70px 30px 30px;
+    padding: 80px 30px 30px;
     grid-template-columns: repeat(2, 339px);
     gap: 30px
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .cards__list {
     grid-template-columns: repeat(1, 339px);
   }
@@ -66,7 +66,7 @@
 
 @media screen and (max-width: 576px) {
   .cards__list {
-    padding: 40px 10px 30px;
+    padding: 52px 10px 30px;
     grid-template-columns: repeat(1, 300px);
     gap: 14px;
   }

@@ -81,13 +81,19 @@
   }
 
   .about-me__content {
-    /* max-width: 364px; */
+    max-width: 364px;
     margin-right: 49px;
   }
 
   .about-me__subtitle {
     font-size: 40px;
     line-height: 40px;
+  }
+
+  .about-me__text {
+    margin: 16px 0 0;
+    font-size: 11px;
+    line-height: 16px;
   }
 
   .about-me__info {

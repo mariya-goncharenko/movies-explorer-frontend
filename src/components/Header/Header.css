@@ -17,14 +17,16 @@
 .header__button-container-films {
   display: flex;
   gap: 16px;
-  margin-left: 44px;
+  justify-content: space-between;
+  margin-right: 20px;
 }
 
 .header__button {
   min-height: 32px;
+  font-size: 14px;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
+  line-height: 18px;
+  word-wrap: break-word;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,7 +82,9 @@
   .header__account-button {
     display: none;
   }
-
+  .header__button {
+    display: none;
+  }
   .header__menu-button {
     display: flex;
   }
