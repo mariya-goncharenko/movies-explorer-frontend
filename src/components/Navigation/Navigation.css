@@ -47,7 +47,7 @@
   }
 
   .navigation__close-button:hover {
-    opacity: .6;
+    opacity: .8;
   }
 
   .navigation__links {
@@ -82,7 +82,7 @@
   }
 
   .navigation__account-button:hover {
-    opacity: .6;
+    opacity: .8;
   }
 }
 
