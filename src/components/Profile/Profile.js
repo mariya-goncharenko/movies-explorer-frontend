@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./Profile.css";
 import Header from "../Header/Header";
@@ -36,12 +37,15 @@ function Profile() {
             />
             <span className="profile__input-error">{}</span>
           </label>
-          <button type="button" className="profile__save">
+          <button type="submit" className="profile__save">
             Редактировать
           </button>
-          <button type="button" className="profile__logout">
+         
+
+          <Link to="/" type="button" className="profile__logout">
             Выйти из аккаунта
-          </button>
+          </Link>
+          
         </form>
       </section>
     </>

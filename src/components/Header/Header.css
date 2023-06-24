@@ -16,16 +16,17 @@
 
 .header__button-container-films {
   display: flex;
-  gap: 16px;
+  gap: 21px;
   justify-content: space-between;
   margin-right: 20px;
 }
 
 .header__button {
   min-height: 32px;
-  font-size: 14px;
+  text-align: right;
+  font-size: 12px;
   font-weight: 500;
-  line-height: 18px;
+  line-height: 16px;
   word-wrap: break-word;
   display: flex;
   align-items: center;
@@ -34,8 +35,14 @@
   text-decoration: none;
 }
 
-.header__button_active {
-  color: #3ddc84;
+.header__button_type_auth {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.active {
+  font-weight: 500;
 }
 
 .header__button:hover {
@@ -70,7 +77,7 @@
   opacity: 0.8;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 768px) {
   .header {
     padding: 0 30px;
   }
@@ -82,11 +89,14 @@
   .header__account-button {
     display: none;
   }
-  .header__button {
+  .header__button-container-films {
     display: none;
   }
+
   .header__menu-button {
     display: flex;
+    padding: 0;
+    margin: 0;
   }
 }
 

@@ -48,7 +48,7 @@
   flex: 1 1 auto;
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 22px;
 }
 
 .about-me__link {
@@ -91,9 +91,9 @@
   }
 
   .about-me__text {
-    margin: 16px 0 0;
+    margin: 18px 0 0;
     font-size: 11px;
-    line-height: 16px;
+    line-height: 18px;
   }
 
   .about-me__info {
@@ -103,7 +103,6 @@
   }
 
   .about-me__description {
-    margin-top: 20px;
     font-size: 12px;
     line-height: 18px;
   }

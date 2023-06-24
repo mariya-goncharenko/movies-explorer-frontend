@@ -75,8 +75,8 @@
 .profile__save {
   margin-top: 204px;
   min-height: 16px;
-  font-weight: 500;
-  font-size: 13px;
+  font-weight: 400;
+  font-size: 12px;
   line-height: 16px;
   text-align: center;
   color: #fff;
@@ -96,6 +96,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1023px) {
@@ -108,7 +109,7 @@
     margin-bottom: 96px;
   }
 
-  .profile__button-save {
+  .profile__save {
     margin-top: 193px;
   }
 }
@@ -135,5 +136,9 @@
   .profile__logout {
     font-size: 12px;
     line-height: 15px;
+  }
+
+  .profile__save {
+    margin-top: 361px;
   }
 }
