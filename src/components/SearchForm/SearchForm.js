@@ -19,6 +19,7 @@ function SearchForm() {
         </button>
       </form>
       <FilterCheckbox />
+      
 
       <div className="search__border-bottom"></div>
     </div>
