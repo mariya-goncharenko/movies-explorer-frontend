@@ -19,7 +19,7 @@ function Form({
       <Link to="/" className="form__logo">
         <img src={logo} alt="Логотип" />
       </Link>
-      <h3 className="form__title">{title}</h3>
+      <h1 className="form__title">{title}</h1>
       <form className="forma" id="form" onSubmit={onSubmit} noValidate>
         {children}
         <button

@@ -19,6 +19,7 @@ function Login() {
           id="email-input"
           type="email"
           required
+          placeholder="Введите ваш email"
         />
         <span className="form__input-error">{}</span>
       </label>
@@ -29,7 +30,9 @@ function Login() {
           className="form__input"
           id="password-input"
           type="password"
+          minLength="6"
           required
+          placeholder="Введите пароль"
         />
         <span className="form__input-error">{}</span>
       </label>

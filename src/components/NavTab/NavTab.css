@@ -2,10 +2,12 @@
   position: absolute;
   bottom: 30px;
   margin: 0 auto;
+  padding: 0;
   display: flex;
   flex-direction: row;
   list-style-type: none;
   gap: 10px;
+  list-style: none;
 }
 
 .nav-tab__link {

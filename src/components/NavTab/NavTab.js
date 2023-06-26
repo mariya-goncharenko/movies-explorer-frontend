@@ -4,32 +4,23 @@ import { Link } from "react-scroll";
 
 function NavTab() {
   return (
-    <nav className="nav-tab">
-      <Link 
-        to="about" 
-        className="nav-tab__link" 
-        smooth={true} 
-        duration={600}
-      >
-        О проекте
-      </Link>
-      <Link 
-        to="techs" 
-        className="nav-tab__link" 
-        smooth={true} 
-        duration={600}
-      >
-        Технологии
-      </Link>
-      <Link
-        to="about-me"
-        className="nav-tab__link"
-        smooth={true}
-        duration={600}
-      >
-        Студент
-      </Link>
-    </nav>
+    <ul className="nav-tab">
+      <li className="nav-tab__link">
+        <Link to="about" smooth={true} duration={600}>
+          О проекте
+        </Link>
+      </li>
+      <li className="nav-tab__link">
+        <Link to="techs" smooth={true} duration={600}>
+          Технологии
+        </Link>
+      </li>
+      <li className="nav-tab__link">
+        <Link to="about-me" smooth={true} duration={600}>
+          Студент
+        </Link>
+      </li>
+    </ul>
   );
 }
 

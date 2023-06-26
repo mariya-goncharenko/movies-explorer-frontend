@@ -13,14 +13,15 @@ function MoviesCardList() {
 
       {/*<SearchError
         errorText={
-          "Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз"
+          "Во время запроса произошла ошибка.Подождите немного и попробуйте ещё раз"
         }
       />*/}
+      
       <MoviesCard />
 
     
       <div className="cards__button-container">
-        <button className="cards__button">Ещё</button>
+        <button className="cards__button" type="button">Ещё</button>
       </div>
     </section>
   );

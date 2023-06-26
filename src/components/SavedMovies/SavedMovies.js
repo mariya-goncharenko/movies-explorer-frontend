@@ -1,18 +1,20 @@
-import React from "react"
-import SearchForm from "../SearchForm/SearchForm"
-import MoviesCardList from "../MoviesCardList/MoviesCardList"
-import Header from "../Header/Header"
-import Footer from "../Footer/Footer"
+import React from "react";
+import SearchForm from "../SearchForm/SearchForm";
+import MoviesCardList from "../MoviesCardList/MoviesCardList";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 function SavedMovies() {
   return (
-    <section className="movies">
+    <>
       <Header />
-      <SearchForm />
-      <MoviesCardList />
+      <main>
+        <SearchForm />
+        <MoviesCardList />
+      </main>
       <Footer />
-    </section>
-  )
+    </>
+  );
 }
 
-export default SavedMovies
+export default SavedMovies;

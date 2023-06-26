@@ -6,36 +6,35 @@ import logo from "../../images/logo.svg";
 import account from "../../images/acc-button.svg";
 import menu from "../../images/menu-button.svg";
 
-import Navigation from "../Navigation/Navigation"
+import Navigation from "../Navigation/Navigation";
 
 function Header() {
-
-  const location = useLocation()
+  const location = useLocation();
 
   // Функция для проверки, нужно ли отображать шапку для фильмов:
   const shouldShowSecondHeader = () => {
-    const { pathname } = location
+    const { pathname } = location;
     return (
-        pathname === "/movies" ||
-        pathname === "/saved-movies" ||
-        pathname === "/profile"
-    )
-  }
+      pathname === "/movies" ||
+      pathname === "/saved-movies" ||
+      pathname === "/profile"
+    );
+  };
 
   //Функция для проверки, нужно ли отображатьосновную шапку:
   const shouldShowFirstHeader = () => {
-    const { pathname } = location
-    return pathname === "/"
-  }
+    const { pathname } = location;
+    return pathname === "/";
+  };
 
-  const [isClicked, setIsClicked] = React.useState(false)
+  const [isClicked, setIsClicked] = React.useState(false);
 
   function handleOpen() {
-    setIsClicked(true)
+    setIsClicked(true);
   }
 
   function handleClose() {
-    setIsClicked(false)
+    setIsClicked(false);
   }
 
   return (
@@ -45,14 +44,14 @@ function Header() {
           <Link to="/" className="header__logo">
             <img src={logo} alt="Логотип сайта" />
           </Link>
-          <div className="header__button-container">
+          <nav className="header__button-container">
             <Link to="/signup" className="header__button">
               Регистрация
             </Link>
             <Link to="/signin" className="header__button header__button-green">
               Войти
             </Link>
-          </div>
+          </nav>
         </header>
       )}
       {shouldShowSecondHeader() && (
@@ -61,32 +60,44 @@ function Header() {
             <img src={logo} alt="Логотип" />
           </Link>
 
-          <div className="header__button-container">
-            <div className="header__button-container-films">
-            <NavLink
-                to="/movies"
-                className="header__button header__button_type_auth"
+          <nav className="header__button-container">
+            <ul className="header__button-container-auth">
+              <li className="header__button-container-item">
+                <NavLink
+                  to="/movies"
+                  className="header__button header__button_type_auth"
+                >
+                  Фильмы
+                </NavLink>
+              </li>
+              <li className="header__button-container-item">
+                <NavLink
+                  to="/saved-movies"
+                  className="header__button header__button_type_auth"
+                >
+                  Сохранённые фильмы
+                </NavLink>
+              </li>
+            </ul>
+            <Link
+              to="/profile"
+              className="header__account-button"
             >
-              Фильмы
-            </NavLink>
-            <NavLink
-                to="/saved-movies"
-                className="header__button header__button_type_auth"
-            >
-              Сохранённые фильмы
-            </NavLink>
-          </div>
-            <Link to="/profile" className="header__account-button">
+              <p className="header__account-title">Аккаунт</p>
               <img
-                  className="header__account-image"
-                  src={account}
-                  alt="изображение кнопки аккаунта"
+                className="header__account-image"
+                src={account}
+                alt="изображение кнопки аккаунта"
               />
             </Link>
-            <button className="header__menu-button" onClick={handleOpen}>
+            <button
+              className="header__menu-button"
+              onClick={handleOpen}
+              type="button"
+            >
               <img src={menu} alt="меню" />
             </button>
-          </div>
+          </nav>
           {isClicked ? <Navigation handleClose={handleClose} /> : ""}
         </header>
       )}
@@ -95,5 +106,3 @@ function Header() {
 }
 
 export default Header;
-
-
