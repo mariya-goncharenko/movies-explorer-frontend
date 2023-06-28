@@ -6,36 +6,35 @@ import logo from "../../images/logo.svg";
 import account from "../../images/acc-button.svg";
 import menu from "../../images/menu-button.svg";
 
-import Navigation from "../Navigation/Navigation"
+import Navigation from "../Navigation/Navigation";
 
 function Header() {
-
-  const location = useLocation()
+  const location = useLocation();
 
   // Функция для проверки, нужно ли отображать шапку для фильмов:
   const shouldShowSecondHeader = () => {
-    const { pathname } = location
+    const { pathname } = location;
     return (
-        pathname === "/movies" ||
-        pathname === "/saved-movies" ||
-        pathname === "/profile"
-    )
-  }
+      pathname === "/movies" ||
+      pathname === "/saved-movies" ||
+      pathname === "/profile"
+    );
+  };
 
   //Функция для проверки, нужно ли отображатьосновную шапку:
   const shouldShowFirstHeader = () => {
-    const { pathname } = location
-    return pathname === "/"
-  }
+    const { pathname } = location;
+    return pathname === "/";
+  };
 
-  const [isClicked, setIsClicked] = React.useState(false)
+  const [isClicked, setIsClicked] = React.useState(false);
 
   function handleOpen() {
-    setIsClicked(true)
+    setIsClicked(true);
   }
 
   function handleClose() {
-    setIsClicked(false)
+    setIsClicked(false);
   }
 
   return (
@@ -63,24 +62,24 @@ function Header() {
 
           <div className="header__button-container">
             <div className="header__button-container-films">
-            <NavLink
+              <NavLink
                 to="/movies"
                 className="header__button header__button_type_auth"
-            >
-              Фильмы
-            </NavLink>
-            <NavLink
+              >
+                Фильмы
+              </NavLink>
+              <NavLink
                 to="/saved-movies"
                 className="header__button header__button_type_auth"
-            >
-              Сохранённые фильмы
-            </NavLink>
-          </div>
+              >
+                Сохранённые фильмы
+              </NavLink>
+            </div>
             <Link to="/profile" className="header__account-button">
               <img
-                  className="header__account-image"
-                  src={account}
-                  alt="изображение кнопки аккаунта"
+                className="header__account-image"
+                src={account}
+                alt="изображение кнопки аккаунта"
               />
             </Link>
             <button className="header__menu-button" onClick={handleOpen}>
@@ -95,5 +94,3 @@ function Header() {
 }
 
 export default Header;
-
-
