@@ -1,68 +1,57 @@
-export const BASE_URL = "http://localhost:3000";
+export const BASE_URL = "https://api.moviesexp.nomoredomains.rocks";
 
-function checkResponse(res) {
+export const checkResponse = (res) => {
   if (res.ok) {
     return res.json();
   }
-  return Promise.reject(`${res.status}`);
-}
+  return Promise.reject(`Error: ${res.status}`);
+};
 
 // Регистрация пользователя:
 export const register = (name, email, password) => {
   return fetch(`${BASE_URL}/signup`, {
     method: "POST",
     headers: {
+      Accept: "application/json",
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({
-      name: name,
-      email: email,
-      password: password,
-    }),
-  }).then(checkResponse);
+    body: JSON.stringify({ name, email, password }),
+  }).then((res) => checkResponse(res));
 };
 
 // Авторизация пользователя:
-export const login = (name, email, password) => {
+export const login = (email, password) => {
   return fetch(`${BASE_URL}/signin`, {
     method: "POST",
     headers: {
+      Accept: "application/json",
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({
-      name: name,
-      email: email,
-      password: password,
-    }),
-  })
-    .then(checkResponse)
-    .then((data) => {
-      if (data.token) {
-        localStorage.setItem("jwt", data.token);
-      }
-      return data;
-    });
+    body: JSON.stringify({ email, password }),
+  }).then((res) => checkResponse(res));
 };
 
 // Проверка токена:
-export const checkToken = (jwt) => {
+export const checkToken = (token) => {
   return fetch(`${BASE_URL}/users/me`, {
     method: "GET",
     headers: {
+      Accept: "application/json",
       "Content-Type": "application/json",
-      authorization: `Bearer ${jwt}`,
+      Authorization: `Bearer ${token}`,
     },
-  }).then(checkResponse);
+  }).then((res) => checkResponse(res));
 };
 
 // Получаем данные профиля с сервера:
 export const getUserInfo = () => {
   return fetch(`${BASE_URL}/users/me`, {
+    method: "GET",
     headers: {
+      Authorization: `Bearer ${localStorage.getItem("jwt")}`,
       "Content-Type": "application/json",
-      authorization: `Bearer ${localStorage.getItem("jwt")}`,
     },
-  }).then((res) => this._getResponseData(res));
+  }).then((res) => checkResponse(res));
 };
 
 // Получаем данные карточек с фильмами.
