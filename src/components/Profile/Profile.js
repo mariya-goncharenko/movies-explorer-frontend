@@ -40,12 +40,10 @@ function Profile() {
           <button type="submit" className="profile__save">
             Редактировать
           </button>
-         
 
           <Link to="/" type="button" className="profile__logout">
             Выйти из аккаунта
           </Link>
-          
         </form>
       </section>
     </>

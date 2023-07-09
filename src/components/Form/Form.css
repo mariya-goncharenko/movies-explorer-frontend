@@ -116,11 +116,11 @@
 }
 
 .form__input_type_error {
-  border-bottom-color: #EE3465;
+  border-bottom-color: #ee3465;
 }
 
 .form__input_type_error:focus {
-  border-bottom-color: #EE3465;
+  border-bottom-color: #ee3465;
 }
 
 .form__input-error {
@@ -129,7 +129,7 @@
   font-weight: 400;
   font-size: 10px;
   line-height: 12px;
-  color: #EE3465;
+  color: #ee3465;
   position: absolute;
   top: 50px;
   left: 0;

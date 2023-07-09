@@ -25,7 +25,11 @@ function Form({
         <button
           type="submit"
           disabled={isDisabled ? true : false}
-          className="form__button-save"
+          className={
+            isDisabled || isLoading
+              ? "form__button-save form__button-save_inactive"
+              : "form__button-save"
+          }
         >
           {buttonText}
         </button>

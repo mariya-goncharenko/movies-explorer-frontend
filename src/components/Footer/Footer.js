@@ -8,10 +8,7 @@ function Footer() {
         Учебный проект Яндекс.Практикум х BeatFilm.
       </h3>
       <div className="footer__container">
-        <p className="footer__author">
-          {" "}
-          © 2023. Мария Гончаренко
-        </p>
+        <p className="footer__author"> © 2023. Мария Гончаренко</p>
         <a
           className="footer__link"
           href="https://practicum.yandex.ru"

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
 
 import logo from "../../images/logo.svg";
@@ -8,25 +8,7 @@ import menu from "../../images/menu-button.svg";
 
 import Navigation from "../Navigation/Navigation";
 
-function Header() {
-  const location = useLocation();
-
-  // Функция для проверки, нужно ли отображать шапку для фильмов:
-  const shouldShowSecondHeader = () => {
-    const { pathname } = location;
-    return (
-      pathname === "/movies" ||
-      pathname === "/saved-movies" ||
-      pathname === "/profile"
-    );
-  };
-
-  //Функция для проверки, нужно ли отображатьосновную шапку:
-  const shouldShowFirstHeader = () => {
-    const { pathname } = location;
-    return pathname === "/";
-  };
-
+function Header({ loggedIn }) {
   const [isClicked, setIsClicked] = React.useState(false);
 
   function handleOpen() {
@@ -37,9 +19,12 @@ function Header() {
     setIsClicked(false);
   }
 
+  const setActive = ({ isActive }) =>
+    isActive ? "header__button_active" : "header__button";
+
   return (
     <>
-      {shouldShowFirstHeader() && (
+      {!loggedIn ? (
         <header className="header" id="header">
           <Link to="/" className="header__logo">
             <img src={logo} alt="Логотип сайта" />
@@ -53,8 +38,7 @@ function Header() {
             </Link>
           </div>
         </header>
-      )}
-      {shouldShowSecondHeader() && (
+      ) : (
         <header className="header" id="header">
           <Link to="/" className="header__logo">
             <img src={logo} alt="Логотип" />
@@ -62,16 +46,10 @@ function Header() {
 
           <div className="header__button-container">
             <div className="header__button-container-films">
-              <NavLink
-                to="/movies"
-                className="header__button header__button_type_auth"
-              >
+              <NavLink to="/movies" className={setActive}>
                 Фильмы
               </NavLink>
-              <NavLink
-                to="/saved-movies"
-                className="header__button header__button_type_auth"
-              >
+              <NavLink to="/saved-movies" className={setActive}>
                 Сохранённые фильмы
               </NavLink>
             </div>

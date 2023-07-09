@@ -14,7 +14,7 @@ function Portfolio() {
           rel="noreferrer"
         >
           <p className="portfolio__text">Статичный сайт</p>
-          <img className="portfolio__image" src={arrow} alt="стрелка" />
+          <img className="portfolio__image" src={arrow} alt="Стрелка - ссылка" />
         </a>
         <a
           href="https://mariya-goncharenko.github.io/russian-travel/"
@@ -23,7 +23,7 @@ function Portfolio() {
           rel="noreferrer"
         >
           <p className="portfolio__text">Адаптивный сайт</p>
-          <img className="portfolio__image" src={arrow} alt="стрелка" />
+          <img className="portfolio__image" src={arrow} alt="Стрелка - ссылка" />
         </a>
         <a
           href="https://mariya-goncharenko.github.io/react-mesto-auth/#/sign-in"
@@ -32,7 +32,7 @@ function Portfolio() {
           rel="noreferrer"
         >
           <p className="portfolio__text">Одностраничное приложение</p>
-          <img className="portfolio__image" src={arrow} alt="стрелка" />
+          <img className="portfolio__image" src={arrow} alt="Стрелка - ссылка" />
         </a>
       </nav>
     </section>

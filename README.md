@@ -38,7 +38,7 @@
 - [Критерии диплома веб-разработчика](https://code.s3.yandex.net/web-developer/static/new-program/web-diploma-criteria-2.0/index.html)
 
 ## Ссылки:
-
+- IP: 158.160.103.88
 - [Макет](https://disk.yandex.ru/d/-DD6mBAZo9eKfw)
 - [Cайт](https://moviexp.nomoredomains.rocks)
 - [Репозиторий с бэкендом](https://github.com/mariya-goncharenko/movies-explorer-api)

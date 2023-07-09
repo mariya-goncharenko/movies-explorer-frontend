@@ -246,9 +246,7 @@ function App() {
             />
             <Route
               path="/signin"
-              element={
-                <Login onLogin={handleLogin} isLoading={isLoading} />
-              }
+              element={<Login onLogin={handleLogin} isLoading={isLoading} />}
             />
             <Route
               path="/"

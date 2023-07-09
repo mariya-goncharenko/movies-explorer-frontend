@@ -2,7 +2,7 @@
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
-   justify-content: center; 
+  justify-content: center;
 }
 
 .cards__list {
@@ -18,10 +18,10 @@
 
 .cards__button-container {
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 14px 0 0 0;
-    min-height: 115px;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px 0 0 0;
+  min-height: 115px;
 }
 
 .cards__button {
@@ -41,7 +41,7 @@
 }
 
 .cards__button:hover {
-  border: 1px solid #3DDC84;
+  border: 1px solid #3ddc84;
   cursor: pointer;
 }
 
@@ -61,14 +61,13 @@
 
 @media screen and (max-width: 780px) {
   .cards__button-container {
-      padding: 58px 0 0 0;
+    padding: 58px 0 0 0;
   }
 
   .cards__button {
     width: calc(100% - 60px);
   }
 }
-
 
 @media screen and (max-width: 750px) {
   .cards__list {
@@ -89,5 +88,5 @@
 
   .cards__button-container {
     padding: 50px 0 0 0;
-}
+  }
 }
