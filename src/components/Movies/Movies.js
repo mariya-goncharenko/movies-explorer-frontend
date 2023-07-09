@@ -56,7 +56,6 @@ function Movies({ loggedIn, handleLikeFilm, onDeleteCard, savedMovies }) {
         .then((cardsData) => {
           handleUpdateFilteredMovies(cardsData, query, isShortFilm);
           setisReqError(false);
-          console.log(cardsData);
         })
         .catch((err) => {
           setisReqError(true);

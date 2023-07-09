@@ -50,7 +50,6 @@ function App() {
   // Проверяем есть ли токен в локальном хранилище:
   useEffect(() => {
     const jwt = localStorage.getItem("jwt");
-    console.log(jwt);
     if (jwt) {
       api
         .checkToken(jwt)
@@ -143,7 +142,6 @@ function App() {
       api
         .getMovies()
         .then((cardsData) => {
-          console.log(cardsData);
           setSavedMovies(cardsData.reverse());
         })
         .catch((err) => {
