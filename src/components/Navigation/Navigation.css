@@ -77,7 +77,8 @@
     align-items: center;
     justify-content: center;
     color: #fff;
-    text-decoration: none;
+    text-decoration: underline 1px;
+    text-underline-position: from-font;
   }
 
   .navigation__link:hover {
