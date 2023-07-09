@@ -39,6 +39,7 @@
 
 ## Ссылки:
 - IP: 158.160.103.88
+- [Пул-реквест](https://github.com/mariya-goncharenko/movies-explorer-frontend/pull/2) 
 - [Макет](https://disk.yandex.ru/d/-DD6mBAZo9eKfw)
 - [Cайт](https://moviexp.nomoredomains.rocks)
 - [Репозиторий с бэкендом](https://github.com/mariya-goncharenko/movies-explorer-api)
