@@ -70,7 +70,6 @@
 .popup__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 26px;
   font-style: normal;
   font-weight: 900;
   font-size: 24px;
@@ -103,6 +102,5 @@
   .popup__title {
     font-size: 20px;
     line-height: 24px;
-    margin-bottom: 25px;
   }
 }
