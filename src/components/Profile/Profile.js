@@ -64,7 +64,7 @@ function Profile({ isLoading, signOut, onUpdateUser, loggedIn }) {
               id="name-input"
               type="text"
               minLength="2"
-              maxLength="40"
+              maxLength="30"
               required
               placeholder="Ваше имя"
               onChange={handleChangeInput}

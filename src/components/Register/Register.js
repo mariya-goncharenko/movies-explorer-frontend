@@ -35,7 +35,7 @@ function Register({ onRegister, isLoading }) {
           id="name-input"
           type="text"
           minLength="2"
-          maxLength="40"
+          maxLength="30"
           required
           placeholder="Ваше имя"
           onChange={handleChangeInput}
@@ -67,7 +67,7 @@ function Register({ onRegister, isLoading }) {
           id="password-input"
           type="password"
           required
-          minLength="4"
+          minLength="6"
           maxLength="12"
           placeholder="Установите пароль"
           onChange={handleChangeInput}

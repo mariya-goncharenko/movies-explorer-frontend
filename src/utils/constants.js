@@ -5,8 +5,8 @@ const SHOW_MORE_MOBILE = 2;
 // Длинна короткометражки в минутах:
 const SHORTS = 40;
 
-const EMAIL_PATTERN = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
-const USERNAME_PATTERN = "^[A-Za-zА-Яа-яЁё /s -]+$";
+const EMAIL_PATTERN = "[a-zA-Z0-9_.]+@[a-zA-Z0-9_]+\\.[a-z]{2,}";
+const USERNAME_PATTERN = "[A-Za-zА-Яа-яЁё\\s-]";
 
 export {
   SHOW_MORE_DECKTOP,
