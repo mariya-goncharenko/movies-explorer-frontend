@@ -72,16 +72,20 @@
   margin-bottom: 17px;
 }
 
-.profile__save {
-  margin-top: 204px;
-  min-height: 16px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
+.profile__button-save {
+  background: #4285f4;
+  border-radius: 3px;
+  margin-top: 213px;
+  min-height: 45px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  color: #fff;
   border: none;
-  background-color: transparent;
+  color: #fff;
   cursor: pointer;
 }
 

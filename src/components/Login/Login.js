@@ -37,7 +37,7 @@ function Login({ onLogin, isLoading }) {
           id="email-input"
           type="email"
           required
-          placeholder="почта"
+          placeholder="Введите E-mail"
           onChange={handleChangeInput}
           pattern={EMAIL_PATTERN}
           value={enteredValues.email || ""}
@@ -52,7 +52,7 @@ function Login({ onLogin, isLoading }) {
           id="password-input"
           type="password"
           required
-          placeholder="пароль"
+          placeholder="Введите пароль"
           onChange={handleChangeInput}
           value={enteredValues.password || ""}
         />
