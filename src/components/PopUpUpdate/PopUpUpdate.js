@@ -12,12 +12,12 @@ function PopUpUpdate(props) {
       <div className="popup__container">
         {props.isUpdate ? (
           <>
-            <p className="popup__title">Редактирование прошло успешно!</p>
+            <p className="popup__title">Данные успешно изменены!</p>
           </>
         ) : (
           <>
             <p className="popup__title">
-              Что-то пошло не так. Попробуйте ещё раз!
+              При обновлении профиля произошла ошибка.!
             </p>
           </>
         )}

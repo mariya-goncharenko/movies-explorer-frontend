@@ -64,6 +64,7 @@ function App() {
           console.log(err);
         });
     }
+    // Комментарий ниже помогает избавиться от предупреждения от eslint.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -74,7 +75,7 @@ function App() {
       .then(() => {
         setPopUpOpen(true);
         setIsSuccess(true);
-        // Перекидываем на авторизацию, в случае успешной регистрации
+        // Проходим авторизацию, в случае успешной регистрации:
         handleLogin({ email, password });
       })
       .catch((err) => {
@@ -215,6 +216,7 @@ function App() {
       closeAllPopUps();
     }
   }
+
   // Закрытие по кнопке ESC:
   const isOpen = isPopUpOpen || isPopUpOpen;
   useEffect(() => {
@@ -223,6 +225,7 @@ function App() {
         closeAllPopUps();
       }
     }
+
     if (isOpen) {
       document.addEventListener("keydown", closeByEscape);
       return () => {
@@ -242,10 +245,12 @@ function App() {
                 <Register onRegister={handleRegister} isLoading={isLoading} />
               }
             />
+
             <Route
               path="/signin"
               element={<Login onLogin={handleLogin} isLoading={isLoading} />}
             />
+
             <Route
               path="/"
               element={
@@ -256,6 +261,7 @@ function App() {
                 </>
               }
             />
+
             <Route
               path={"/movies"}
               element={
@@ -269,6 +275,7 @@ function App() {
                 />
               }
             />
+
             <Route
               path={"/saved-movies"}
               element={
@@ -281,6 +288,7 @@ function App() {
                 />
               }
             />
+
             <Route
               path={"/profile"}
               element={

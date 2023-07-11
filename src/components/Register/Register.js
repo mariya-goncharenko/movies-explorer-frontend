@@ -2,7 +2,7 @@ import React from "react";
 import "../Form/Form.css";
 import Form from "../Form/Form";
 import useForm from "../../hooks/useForm";
-import { EMAIL_PATTERN, USERNAME_PATTERN } from "../../utils/constants";
+import { EMAIL_PATTERN} from "../../utils/constants";
 
 function Register({ onRegister, isLoading }) {
   const { enteredValues, errors, handleChangeInput, isFormValid } = useForm();
@@ -40,7 +40,6 @@ function Register({ onRegister, isLoading }) {
           placeholder="Ваше имя"
           onChange={handleChangeInput}
           value={enteredValues.name || ""}
-          pattern={USERNAME_PATTERN}
         />
         <span className="form__input-error">{errors.name}</span>
       </label>

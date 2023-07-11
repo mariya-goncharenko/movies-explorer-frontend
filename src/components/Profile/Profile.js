@@ -5,7 +5,7 @@ import "./Profile.css";
 import Header from "../Header/Header";
 
 import useForm from "../hooks/useForm";
-import { EMAIL_PATTERN, USERNAME_PATTERN } from "../../utils/constants";
+import { EMAIL_PATTERN } from "../../utils/constants";
 
 function Profile({ isLoading, signOut, onUpdateUser, loggedIn }) {
   const currentUser = useContext(CurrentUserContext);
@@ -69,7 +69,6 @@ function Profile({ isLoading, signOut, onUpdateUser, loggedIn }) {
               placeholder="Ваше имя"
               onChange={handleChangeInput}
               value={enteredValues.name || ""}
-              pattern={USERNAME_PATTERN}
             />
             <span className="profile__input-error">{errors.name}</span>
           </label>

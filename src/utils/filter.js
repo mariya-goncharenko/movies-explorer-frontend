@@ -1,4 +1,4 @@
-import { SHORTS } from "./constants";
+import { SHORT_FILMS } from "./constants";
 
 // Пересчёт длительности фильмов:
 export function durationConverter(duration) {
@@ -9,7 +9,7 @@ export function durationConverter(duration) {
 
 // Определение короткометражки:
 export function filterDuration(movies) {
-  return movies.filter((movie) => movie.duration < SHORTS);
+  return movies.filter((movie) => movie.duration < SHORT_FILMS);
 }
 
 // Фильтрация по поисковому запросу:
