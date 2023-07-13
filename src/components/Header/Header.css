@@ -1,0 +1,150 @@
+.header {
+  padding: 0 70px;
+  min-height: 74px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+}
+
+.header__logo:hover {
+  opacity: 0.8;
+}
+
+.header__button-container {
+  margin-left: auto;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.header__button-container-auth {
+  display: flex;
+  gap: 21px;
+  justify-content: space-between;
+  margin-right: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.header__button {
+  min-height: 32px;
+  text-align: right;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  word-wrap: break-word;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__button_type_auth {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.header__button-container-item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.active {
+  font-weight: 500;
+}
+
+.header__button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.header__button-green {
+  color: #000;
+  background-color: #3ddc84;
+  min-width: 76px;
+  border-radius: 3px;
+}
+.header__account-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 17px;
+}
+
+.header__account-button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.header__account-title{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.header__menu-button {
+  background-color: transparent;
+  border: none;
+  width: 44px;
+  height: 44px;
+  display: none;
+}
+
+.header__menu-button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0 30px;
+  }
+
+  .header__button-container-auth {
+    display: none;
+  }
+
+  .header__account-button {
+    display: none;
+  }
+
+  .header__button-container-auth {
+    display: none;
+  }
+
+  .header__menu-button {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    padding: 0 14px;
+  }
+
+  .header__button-container {
+    gap: 14px;
+  }
+
+  .header__button {
+    min-height: 26px;
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .header__button-green {
+    min-width: 54px;
+  }
+}
